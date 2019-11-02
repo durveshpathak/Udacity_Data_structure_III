@@ -16,8 +16,8 @@ def get_min_max(ints):
     """
     if len(ints) == 0:
         return None
-    min = 0
-    max = 0
+    min = ints[0]
+    max = ints[0]
     
     for num in ints:
         if num<min:

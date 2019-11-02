@@ -4,6 +4,8 @@ def sqrt(number):
     
     if number ==0:
         return number
+    if number <0:
+        return 'No Real square root exist'
     
     while llimit<ulimit:
         check = (llimit + ulimit)//2
@@ -25,14 +27,18 @@ def sqrt(number):
 print(sqrt(121))
 # 11
 
-# Test case 1 perfect root
+# Test case 2 perfect root
 print(sqrt(0))
 # 0
 
-# Test case 1 perfect root
+# Test case 3 perfect root
 print(sqrt(83))
 # 9
 
-# Test case 1 perfect root
+# Test case 4 perfect root
 print(sqrt(127.32323))
 # 11.0
+
+# Test case 5 perfect root
+print(sqrt(-4))
+# No Real square root exist
